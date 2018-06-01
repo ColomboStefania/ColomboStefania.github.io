@@ -68,24 +68,21 @@ function displayQuestion() {
   var index = document.getElementById ("randomNumberCard")
   index.innerHTML = randomNumber;
 
-
-   /*unction showAnswer () {
+   /*function showAnswer () {
      var answer = document.getElementById ("answer")
      answer.innerHTML = randomAnswer;
-
-
    }
    */
 
  };
 
-   function showAnswer(){
 
-     console.log ('hello');
-   }
+function showAnswer(){
+ /*  var answer = document.getElementById ("answer")
+  answer.innerHTML = randomAnswer;*/
 
-
-
+  console.log (randomAnswer);
+};
 
   var startButton = document.getElementById ("startGame")
   startButton.addEventListener ("onclick" , startGame1);
