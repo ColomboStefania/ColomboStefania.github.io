@@ -30,7 +30,6 @@ var startGame1 = function() {
   //DISPLAY FLASHCARD
   showCard()
   displayQuestion()
-  displayQuestion()
   //
 
 };
@@ -45,7 +44,7 @@ function showCard() {
 };
 
 function displayQuestion() {
-  console.log('hello');
+
   //RANDOMI
   //var i = Math.floor(Math.random()*flashCardArray.length); i < flashCardArray.length; i += Math.floor(Math.random()*flashCardArray.length)) {
     //flashCardArray[i]
@@ -57,6 +56,8 @@ function displayQuestion() {
   const randomNumber = Math.floor(Math.random() * flashCardArray.length)
   console.log(randomNumber);
   var randomQuestion = flashCardArray[randomNumber][0];
+  var randomAnswer = flashCardArray[randomNumber][1];
+
   // Get the question
   // Get random item
   // Get a random question
@@ -68,9 +69,26 @@ function displayQuestion() {
   index.innerHTML = randomNumber;
 
 
-  // Figure out how to display
+   /*unction showAnswer () {
+     var answer = document.getElementById ("answer")
+     answer.innerHTML = randomAnswer;
 
-};
 
-var startButton = document.getElementById ("startGame")
-startButton.addEventListener ("onclick" , startGame1);
+   }
+   */
+
+ };
+
+   function showAnswer(){
+
+     console.log ('hello');
+   }
+
+
+
+
+  var startButton = document.getElementById ("startGame")
+  startButton.addEventListener ("onclick" , startGame1);
+
+  var nextButton = document.getElementById ("jumbotronCard")
+  nextButton.addEventListener ("onclick" , showAnswer);
